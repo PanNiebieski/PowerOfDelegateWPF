@@ -124,7 +124,7 @@ private void Button_Run_Click(object sender, RoutedEventArgs e)
     r.Run(0, int.Parse(txtNumber.Text));
     int many = r.Result;
     //Wyświetlenie wyników
-    lblResult.Content = "Po koleji: " + a.ToString();
+    lblResult.Content = "Po kolei: " + a.ToString();
     lblResult_2.Content = "Wszystkie operacje na raz na zmiennej w polu tekstowym: " + many.ToString();
 }
 
