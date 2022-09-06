@@ -1,0 +1,39 @@
+﻿<Window x:Class="PowerOfDelegateWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="339" Width="525">
+    <Grid Height="319" VerticalAlignment="Top">
+        <StackPanel Margin="10,10,328,129" >
+            <Button Tag="Plus" Content="Dodaj operacje dodawania"
+                    Margin="0,0,0,10" Height="30" Width="165" 
+                    Click="Button_AddOperaction_Click" />
+            <Button Tag="Minus" Content="Dodaj operacje odejmowania"
+                    Margin="0,0,0,10" Height="30" Width="165" 
+                    Click="Button_AddOperaction_Click" />
+            <Button Tag="Mno" Content="Dodaj operacje mnożenia"
+                    Margin="0,0,0,10" Height="30" Width="165" 
+                    Click="Button_AddOperaction_Click" />
+            <Button Tag="Dzie" Content="Dodaj operacje dzielenia"
+                    Margin="0,0,0,10" Height="30" Width="165" 
+                    Click="Button_AddOperaction_Click" />
+        </StackPanel>
+        <ListBox Name="lbOperations" HorizontalAlignment="Left"
+                 Height="115" Margin="194,44,0,0" VerticalAlignment="Top" Width="313"/>
+        <Label Content="Lista operacji:" HorizontalAlignment="Left"
+               Margin="194,10,0,0" VerticalAlignment="Top" 
+               RenderTransformOrigin="0.342,0.077" Width="313"/>
+        <TextBox Name="txtNumber" HorizontalAlignment="Left" Height="26"
+               Margin="375,164,0,0" TextWrapping="Wrap" Text="100"
+                 VerticalAlignment="Top" Width="132"/>
+        <Label Content="Zmienna modyfikująca" HorizontalAlignment="Left"
+               Margin="194,164,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label Name="lblResult" Content="Wynik:" HorizontalAlignment="Left"
+               Margin="10,235,0,0" VerticalAlignment="Top" FontSize="16" Width="497"/>
+        <Button Content="Wykonaj" HorizontalAlignment="Left"
+                Margin="194,195,0,0" VerticalAlignment="Top" Width="313"
+                Click="Button_Run_Click" Height="35"/>
+        <Label x:Name="lblResult_2" Content="Wynik:" 
+               HorizontalAlignment="Left" Margin="10,271,0,0"
+               VerticalAlignment="Top" FontSize="16" Width="497"/>
+    </Grid>
+</Window>
